@@ -14,12 +14,16 @@ public class Hello{
     // System.out.println(b2>>>=31);
     // System.out.println(b2>>>=1);
     Hello h = new Hello();
-    h.inputName();
+    h.showErr();
   }
 
-  void inputName(){
-    Scanner scan = new Scanner(System.in);
-    
+  void showErr(){
+    int i =0;
+    String greetings [] = {"Hello world!","No,I mean it!","HELLO WORLD!!"};
+    while(i<4){
+      System.out.println(greetings[i]);
+      i++;
+    }
   }
 
   void printTriangle(){
