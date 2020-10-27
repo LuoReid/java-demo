@@ -10,6 +10,10 @@ public class Circle {
     radius = r;
   }
 
+  public static double calcArea(int radius) {
+    return PI * radius * radius;
+  }
+
   public static void main(String[] args) {
     Circle c1 = new Circle();
     c1.setRadius(50);
@@ -18,6 +22,7 @@ public class Circle {
     double circum1 = c1.circumference();
     double circum2 = c2.circumference();
     System.out.println("Circle 1 has circumference " + circum1);
-    System.out.print("Circle 2 has circumference " + circum2);
+    System.out.println("Circle 2 has circumference " + circum2);
+    System.out.println("Circle area is " + Circle.calcArea(3));
   }
 }
