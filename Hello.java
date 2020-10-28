@@ -15,7 +15,41 @@ public class Hello {
     // System.out.println(b2>>>=1);
     Hello h = new Hello();
     // h.showErr();
-    h.printTable();
+    // h.printTable();
+    h.strTest2();
+  }
+
+  void strTest2(){
+    String s1 = "This is the second string.";
+    String s2 = "This is the second string.";
+    String s3 = new String("This is the second string.");
+    String s4 = new String(s1);
+    String s5 = s1;
+    boolean r1 = s1.equals(s2);
+    boolean r2 = s1 == s2;
+    boolean r3 = s1.equals(s3);
+    boolean r4 = s1 == s3;
+    boolean r5 = s1.equals(s4);
+    boolean r6 = s1 == s4;
+    boolean r7 = s1.equals(s5);
+    boolean r8 = s1 == s5;
+    System.out.println(r1+"\t"+r2+"\t"+r3+"\t"+r4+"\t"+r5+"\t"+r6+"\t"+r7+"\t"+r8);
+  }
+
+  void strTest() {
+    String s = "This is a test String!";
+    System.out.println("before changed, s = " + s);
+    String t = s.toLowerCase();
+    System.out.println("after changed, s = " + s);
+    System.out.println("t = " + t);
+    StringBuffer sb = new StringBuffer(s);
+    System.out.println("s.length = " + s.length());
+    System.out.println("sb.length = " + s.length());
+    t = s.replace('a', 'o');
+    System.out.println("s3.replace = " + t);
+    StringBuffer sbb2 = sb.replace(2, 4, "at");
+    System.out.println("sb.replace = " + sbb2);
+    System.out.println("sb.capacity = " + sb.capacity());
   }
 
   void showErr() {
