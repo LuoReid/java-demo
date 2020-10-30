@@ -23,7 +23,7 @@ public class PointTest {
     System.out.println("p.x = " + p.x + " p.y = " + p.y);
     p.moveTo(30, 30);
     System.out.println("p.x = " + p.x + " p.y = " + p.y);
-    Object[] points = new Point[2];
+    // Object[] points = new Point[2];
     // Point[] p2 = new Object[2];
   }
 }
