@@ -76,20 +76,21 @@ public class ButtonDemo {
     ItemListener il = new ItemListener() {
       public void itemStateChanged(ItemEvent e) {
         JCheckBox cb = (JCheckBox) e.getSource();
-        System.out.println("checkbox: "+cb);
-        if (cb == cb1) {
-          ta.append("\n JCheckBox Button 1 " + cb1.isSelected());
-        } else if (cb == cb2) {
-          ta.append("\n JCheckBox Button 2 " + cb2.isSelected());
-        } else if (cb == cb3) {
-          ta.append("\n JCheckBox Button 3 " + cb3.isSelected());
-        } else if (cb == cb4) {
-          ta.append("\n JCheckBox Button 4 " + cb4.isSelected());
-        } else if (cb == cb5) {
-          ta.append("\n JCheckBox Button 5 " + cb5.isSelected());
-        } else {
-          ta.append("\n JCheckBox Button 6 " + cb6.isSelected());
-        }
+        System.out.println("checkbox: " + cb);
+        ta.append("\n " + cb.getText() + " " + cb.isSelected());
+        // if (cb == cb1) {
+        // ta.append("\n JCheckBox Button 1 " + cb1.isSelected());
+        // } else if (cb == cb2) {
+        // ta.append("\n JCheckBox Button 2 " + cb2.isSelected());
+        // } else if (cb == cb3) {
+        // ta.append("\n JCheckBox Button 3 " + cb3.isSelected());
+        // } else if (cb == cb4) {
+        // ta.append("\n JCheckBox Button 4 " + cb4.isSelected());
+        // } else if (cb == cb5) {
+        // ta.append("\n JCheckBox Button 5 " + cb5.isSelected());
+        // } else {
+        // ta.append("\n JCheckBox Button 6 " + cb6.isSelected());
+        // }
       }
     };
     cb1.addItemListener(il);
@@ -102,20 +103,21 @@ public class ButtonDemo {
     ActionListener al = new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         JRadioButton rb = (JRadioButton) e.getSource();
-        System.out.println("radio: "+rb);
-        if (rb == rb1) {
-          ta.append("\n You selected Radio Button 1 " + rb1.isSelected());
-        } else if (rb == rb2) {
-          ta.append("\n You selected Radio Button 2 " + rb2.isSelected());
-        } else if (rb == rb3) {
-          ta.append("\n You selected Radio Button 3 " + rb3.isSelected());
-        } else if (rb == rb4) {
-          ta.append("\n You selected Radio Button 4 " + rb4.isSelected());
-        } else if (rb == rb5) {
-          ta.append("\n You selected Radio Button 5 " + rb5.isSelected());
-        } else {
-          ta.append("\n You selected Radio Button 6 " + rb6.isSelected());
-        }
+        System.out.println("radio: " + rb);
+        ta.append("\n You selected " + rb.getText() + " " + rb.isSelected());
+        // if (rb == rb1) {
+        // ta.append("\n You selected Radio Button 1 " + rb1.isSelected());
+        // } else if (rb == rb2) {
+        // ta.append("\n You selected Radio Button 2 " + rb2.isSelected());
+        // } else if (rb == rb3) {
+        // ta.append("\n You selected Radio Button 3 " + rb3.isSelected());
+        // } else if (rb == rb4) {
+        // ta.append("\n You selected Radio Button 4 " + rb4.isSelected());
+        // } else if (rb == rb5) {
+        // ta.append("\n You selected Radio Button 5 " + rb5.isSelected());
+        // } else {
+        // ta.append("\n You selected Radio Button 6 " + rb6.isSelected());
+        // }
       }
     };
     rb1.addActionListener(al);
@@ -132,7 +134,7 @@ public class ButtonDemo {
     pb.setLayout(new GridLayout(0, 1));
     pb.add(p3);
     pb.add(p4);
-    
+
     Container cp = frame.getContentPane();
     cp.setLayout(new GridLayout(0, 1));
     cp.add(pa);
